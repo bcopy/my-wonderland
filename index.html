@@ -30,15 +30,28 @@
             <a-asset-item id="table_low"     src="https://cmc-cdn.web.cern.ch/assets/winter/furniture/table_low.glb"></a-asset-item>
             <a-asset-item id="cupcake"                src="https://cmc-cdn.web.cern.ch/assets/winter/treats/cupcake.glb"  ></a-asset-item>
             <a-asset-item id="candy-cane-red"                  src="https://cmc-cdn.web.cern.ch/assets/winter/candy-cane-red.glb"></a-asset-item>
+            <a-asset-item id="tree-decorated-snow"             src="https://cmc-cdn.web.cern.ch/assets/winter/tree-decorated-snow.glb"></a-asset-item>
+            <a-asset-item id="chair_C"                           src="https://cmc-cdn.web.cern.ch/assets/winter/furniture/chair_C.glb"></a-asset-item>
+            <a-asset-item id="shelf_B_large"                     src="https://cmc-cdn.web.cern.ch/assets/winter/furniture/shelf_B_large.glb"></a-asset-item>
+            <a-asset-item id="couch"                             src="https://cmc-cdn.web.cern.ch/assets/winter/furniture/couch.glb"></a-asset-item>
+            <a-asset-item id="rug_rectangle_A"                   src="https://cmc-cdn.web.cern.ch/assets/winter/furniture/rug_rectangle_A.glb"></a-asset-item>
+            <a-asset-item id="snowman"                         src="https://cmc-cdn.web.cern.ch/assets/winter/snowman.glb"></a-asset-item>
+            <a-asset-item id="wreath-decorated"                src="https://cmc-cdn.web.cern.ch/assets/winter/wreath-decorated.glb"></a-asset-item>
+            <a-asset-item id="present-a-cube"                  src="https://cmc-cdn.web.cern.ch/assets/winter/present-a-cube.glb"></a-asset-item>
         </a-assets>
 
         <!-- Main world container -->
         <a-entity id="world-root" world-root>
+            
+            <a-entity environment=" preset: forest; ground: none; groundTexture: none; groundColor: #ffffff; dressing: trees; dressingAmount: 500; dressingColor: #ceebd5; dressingScale: 1; fog: 0.8; fogColor: #adc2d6; playArea: 1; shadow: true; horizonColor: #bfdfff; skyColor: #88c0f4; lighting: point; lightPosition: 1 2 -0.5; "></a-entity>
+            <a-light id="light-floor" type="directional" target="#floor" color="#ffffff" 
+                     intensity="1.2" position="-1 10 -5" castshadow="true" 
+                     shadow="mapSize: 2048x2048; bias: -0.001; near: 0.3; far: 50"></a-light>
+            <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#ffffff" shadow="receive: true"> </a-plane>
+          
             <!-- Environment and Lighting -->
             <a-entity load-fragment="src: /scene.html; templateId: wonderland-scene"></a-entity>
-            <a-entity environment=" preset: forest; ground: none; groundTexture: none; groundColor: #ffffff; dressing: trees; dressingAmount: 500; dressingColor: #ceebd5; dressingScale: 1; fog: 0.8; fogColor: #adc2d6; playArea: 1; shadow: true; horizonColor: #b1d1f0; skyColor: #88c0f4; lightPosition: 1 2 -0.5; "></a-entity>
 
-            <a-plane position="0 0 0" rotation="-90 0 0" width="100" height="100" color="#ffffff" shadow="receive: true"> </a-plane>
         </a-entity>
       
         <!-- Controller Entities -->
