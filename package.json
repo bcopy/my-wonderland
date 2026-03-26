@@ -2,6 +2,13 @@
   "name": "my-wonderland-watcher",
   "version": "1.0.0",
   "description": "My Wonderland with A-Frame Watcher",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bcopy/my-wonderland.git"
+  },
   "scripts": {
     "start": "bun run server.ts",
     "build": "bun build server.ts --compile --outfile wonderland-server"
