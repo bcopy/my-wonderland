@@ -1,7 +1,16 @@
 {
   "name": "my-wonderland-watcher",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "My Wonderland with A-Frame Watcher",
+  "files": [
+    "wonderland-server",
+    "assets-furniture.html",
+    "assets-treats.html",
+    "assets-winter.html",
+    "index.html",
+    "scene.html",
+    "components"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
