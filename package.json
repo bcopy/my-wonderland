@@ -1,0 +1,13 @@
+{
+  "name": "my-wonderland-watcher",
+  "version": "1.0.0",
+  "description": "My Wonderland with A-Frame Watcher",
+  "scripts": {
+    "start": "bun run server.ts",
+    "build": "bun build server.ts --compile --outfile wonderland-server"
+  },
+  "dependencies": {
+    "aframe": "^1.6.0",
+    "@cmcrobotics/aframe-watcher-bun": "github:CMCRobotics/aframe-watcher-bun"
+  }
+}
