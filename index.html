@@ -17,14 +17,17 @@
 
 </head>
 <body>
-  
+    <script>
+        window.AFRAME_WATCHER_URL = "/save"
+    </script>
 
     <a-scene
         start-experience
         webxr="optionalFeatures: hit-test, local-floor, hand-tracking; requiredFeatures: local-floor;"
         renderer="colorManagement: true; physicallyCorrectLights: true; antialias: true"
         cursor="rayOrigin: mouse"
-        raycaster="objects: .clickable">
+        raycaster="objects: .clickable"
+        inspector="url: /aframe-inspector.min.js">
       
         <a-assets>
             <a-asset-item id="table_low"     src="https://cmc-cdn.web.cern.ch/assets/winter/furniture/table_low.glb"></a-asset-item>
